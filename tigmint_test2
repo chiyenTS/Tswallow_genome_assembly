@@ -27,10 +27,10 @@ export PATH=/home/chiyents/zsh-5.7.1/bin:$PATH
 
 cd /pylon5/mc5fs2p/chiyents/tsgenome/data/tigmint_test_out
 
-##skip
-##samtools faidx supernova_hap1.fa
-##bwa index supernova_hap1.fa
-##bwa mem -t8 -p -C supernova_hap1.fa barcoded_reads.fq.gz | samtools sort -@8 -tBX -o supernova_hap1.barcoded_reads_test.sortbx.bam
+
+samtools faidx supernova_hap1.fa
+bwa index supernova_hap1.fa
+bwa mem -t8 -p -C supernova_hap1.fa barcoded_reads.fq.gz | samtools sort -@8 -tBX -o supernova_hap1.barcoded_reads_test.sortbx.bam
 
 ##Running the tigmint molecule 
 tigmint-molecule supernova_hap1.barcoded_reads_test.sortbx.bam | sort -k1,1 -k2,2n -k3,3n >supernova_hap1.barcoded_reads.molecule.bed
