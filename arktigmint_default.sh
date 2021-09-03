@@ -52,3 +52,4 @@ reads=${reads_base} \
 j=0.5 \
 threads=16 \
 t=16
+## not really working due to python version on Bridges 
