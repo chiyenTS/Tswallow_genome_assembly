@@ -27,6 +27,8 @@ export PATH=/home/chiyents/zsh-5.7.1/bin:$PATH
 
 cd /pylon5/mc5fs2p/chiyents/tsgenome/data/tigmint_test_out
 
+## supernova output of mkoutput_supernova.sh =tswallow_supernova.pseudohap2.1.fasta = supernova_hap1.fa
+## https://github.com/chiyenTS/Tswallow_genome_assembly/blob/master/fastqbasic.sh > NewFastq/outs/barcoded.fastq.gz = barcoded_reads.fq.gz
 
 samtools faidx supernova_hap1.fa
 bwa index supernova_hap1.fa
