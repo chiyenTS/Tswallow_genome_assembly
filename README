@@ -32,8 +32,8 @@ snail run
 ~ ]$ export CPPFLAGS='-I/home/chiyents/.conda/envs/ark-env/include' ## to allow compiling (https://askubuntu.com/questions/386315/how-to-add-libraries-path-to-the-configure-command) 
 $SCRATCH/program/ark ]$ ./configure --prefix=$SCRATCH/program/ark && make install 
 $SCRATCH/tsgenome/data/tswallow_supernova_outs]$ gzip -d tswallow_supernova.pseudohap2.1.fasta.gz > tswallow_supernova.pseudohap2.1.fa  ## decompress tswallow haploid 1 for running ark
-$SCRATCH/tsgenome/data/tswallow_supernova_outs]$ ln -s /home/chiyents/myfolder/tsgenome/data/tswallow_supernova_outs/tswallow_supernova.pseudohap2.1.fasta /home/chiyents/myfolder/tsgenome/data/ark_out/
-$SCRATCH/tsgenome/data/tswallow_supernova_outs]$ ln -s /home/chiyents/myfolder/tsgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/chiyents/myfolder/tsgenome/data/ark_out/
+$SCRATCH/tsgenome/data/tswallow_supernova_outs]$ ln -s /home/chiyents/myfolder/tsgenome/data/tswallow_supernova_outs/tswallow_supernova.pseudohap2.1.fasta /home/chiyents/myfolder/tsgenome/data/ark_out/supernova_hap1.fa
+$SCRATCH/tsgenome/data/tswallow_supernova_outs]$ ln -s /home/chiyents/myfolder/tsgenome/data/raw/NewFastq/outs/barcoded.fastq.gz /home/chiyents/myfolder/tsgenome/data/ark_out/barcoded_reads.fq.gz
 
 
 031919 - 032419 preparing tigmint-arks-links run and installation
